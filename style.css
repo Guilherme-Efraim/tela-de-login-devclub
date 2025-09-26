@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-tela-01: #2a1b6b;
+    --cor-tela-02: #5c44a2;
+    --text-cor-01: white;
+    --text-cor-02: rgb(33, 34, 100);
+    --vidro: rgba(255, 255, 255, 0.15);
+    --font-principal: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* color: white; */
+}
+
+.tela-total {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--cor-tela-01), var(--cor-tela-02));
+}
+
+.container-login {
+    border-radius: 10px;
+    background-color: var(--vidro);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.login-titulo {
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text-cor-01);
+    font-family: var(--font-principal);
+}
+
+.area-input {
+    margin: 1rem 1rem;
+}
+
+.area-input > input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(148, 124, 209);
+}
+
+.recurso01 {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center; 
+    gap: 35px;
+    /* background-color: black; */
+    margin-bottom: 1rem;
+}
+
+.checkbox > input {
+    height: 9px;
+}
+
+.checkbox > label {
+    font-weight: 600;
+    font-size: 0.6rem;
+    font-family: var(--font-principal);
+    color: var(--text-cor-01);
+}
+
+.senha > a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.6rem;
+    font-family: var(--font-principal);
+    color: var(--text-cor-01);
+}
+
+.senha > a:hover {
+    cursor: pointer;
+    color: var(--text-cor-02);
+    transition: 0.2s;
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    /* padding: 0.4rem; */
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2a1b6b;
+    cursor: pointer;
+}
+
+.btn > a {
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+    font-size: 0.6rem;
+    font-family: var(--font-principal);
+    color: var(--text-cor-02);
+    text-decoration: none;
+    /* background-color: black; */
+}
+
+.btn > a:hover {
+    color: white;
+}
+
+.recurso02 {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.recurso02 > p {
+    font-family: var(--font-principal);
+    font-weight: 600;
+    font-size: 0.6rem;
+    color: var(--text-cor-01);
+}
+
+.recurso02 > a {
+    font-family: var(--font-principal);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.6rem;
+    color: var(--text-cor-01);
+}
+
+.recurso02 > a:hover {
+    cursor: pointer;
+    color: var(--text-cor-02);
+    transition: 0.2s;
+}
+
