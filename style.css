@@ -52,7 +52,13 @@
     padding: 0.5rem;
     border-radius: 5px;
     border: none;
+    outline: none;
+    color: #fff;
     background-color: rgb(148, 124, 209);
+}
+
+.area-input > input::placeholder {
+    color: #ffffffbe;
 }
 
 .recurso01 {
@@ -69,7 +75,7 @@
 }
 
 .checkbox > label {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     font-family: var(--font-principal);
     color: var(--text-cor-01);
@@ -77,7 +83,7 @@
 
 .senha > a {
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     font-family: var(--font-principal);
     color: var(--text-cor-01);
